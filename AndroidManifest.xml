@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.thegarmendiashit"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <uses-library android:name="android.test.runner" />
+        
+        <activity
+            android:name="com.garmendia.ui.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.garmendia.ui.GameActivity"
+            android:label="@string/title_activity_game" 
+            android:parentActivityName="com.garmendia.ui.MainActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.garmendia.ui.FixtureDateActivity"
+            android:label="@string/title_activity_fixture_date" 
+            android:parentActivityName="com.garmendia.ui.MainActivity" >
+        </activity>
+        
+        
+    </application>
+    
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+       android:targetPackage="test.service" android:label="Tests for My App" />
+
+</manifest>
