@@ -21,5 +21,4 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:background="@drawable/button_custom"/>
-		
 </LinearLayout>
